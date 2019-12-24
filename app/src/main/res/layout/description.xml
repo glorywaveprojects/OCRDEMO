@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_color">
+        <RelativeLayout
+            android:id="@+id/backlayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center">
+            <ImageView
+
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtitem"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Itemname"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/descriptionlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/gradient_transprent">
+    <TextView
+
+        android:textColor="@android:color/white"
+        android:text="Desc"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/txtDesc"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_gravity="center_vertical|end"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <Button
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/descriptionlayout"
+        android:id="@+id/read_text_button"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_text"
+        android:background="@drawable/gradient"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
